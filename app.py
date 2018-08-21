@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, request, abort
 from api import make_prediction, ER_delta, stats_pull
 import numpy as np
+import os
 
 # Initialization of the Baseball App
 app = Flask('BaseballApp')
@@ -60,4 +61,6 @@ def fetch_stats():
 
 
 # Running Baseball App
-app.run()
+if __name__ == '__main__':
+  port = int(os.environ.get('PORT', 5000))
+  app.run(host='0.0.0.0', port=port, debug=True)
