@@ -59,5 +59,5 @@ def fetch_stats():
 
 
 
-# Running Baseball App with debug mode turned on
-app.run(debug=True)
+# Running Baseball App
+app.run()
