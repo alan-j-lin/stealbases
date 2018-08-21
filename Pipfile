@@ -10,6 +10,7 @@ gunicorn = "*"
 flask = "*"
 numpy = "*"
 pandas = "*"
+sklearn = "*"
 
 [requires]
 
